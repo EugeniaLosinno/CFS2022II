@@ -17,7 +17,7 @@ while (estaPrendido != "S" && estaPrendido != "N") {
 }
 var volumen = readlineSync.questionInt("En que volumen esta, indique entre 0 y 120: ");
 while (volumen > 120) {
-    volumen = readlineSync.questionInt("Debe ingresar un número menor a 121: ");
+    volumen = readlineSync.questionInt("Debe ingresar un numero menor a 121: ");
 }
 var color = readlineSync.question("Que color es: ");
 var peso = readlineSync.questionInt("Que peso tiene: ");
