@@ -18,13 +18,25 @@ class Minicomponente {
     }
      
     let readlineSync = require('readline-sync');
-    let estaPrendido = readlineSync.question("Se encuentra prendido el Minicomponente S/N: ");
-    let volumen = readlineSync.question("En que volumen esta, indique entre 0 y 120: ");
+    let estaPrendido = readlineSync.question("Se encuentra prendido el Minicomponente S/N: ").toUpperCase();
+    while (estaPrendido != "S" && estaPrendido!="N" ){
+        estaPrendido = readlineSync.question("Debe Ingresar S/N: ").toUpperCase();
+    }
+    let volumen = readlineSync.questionInt("En que volumen esta, indique entre 0 y 120: ");
+    while (volumen > 120){
+        volumen = readlineSync.questionInt("Debe ingresar un numero menor a 121: ");
+    }
     let color = readlineSync.question("Que color es: ");
-    let peso = readlineSync.question("Que peso tiene: ");
-    let parlantesIntegrados = readlineSync.question("Tiene parlantes integrados el Minicomponente S/N: ");
-    let cantidadParlante = readlineSync.question("Indique la cantidad de parlantes: ");
-    let radio = readlineSync.question("Radio AM o FM ");
+    let peso = readlineSync.questionInt("Que peso tiene: ");
+    let parlantesIntegrados = readlineSync.question("Tiene parlantes integrados el Minicomponente S/N: ").toUpperCase();
+    while (parlantesIntegrados != "S" && parlantesIntegrados !="N" ){
+        parlantesIntegrados = readlineSync.question("Debe ingresar S/N: ").toUpperCase();
+    }
+    let cantidadParlante = readlineSync.questionInt("Indique la cantidad de parlantes: ");
+    let radio = readlineSync.question("Radio AM o FM ").toUpperCase();
+    while (radio != "AM" && radio !="FM" ){
+        radio = readlineSync.question("Debe ingresar AM o FM: ").toUpperCase();
+    }
 
     let minicomponenteJVC = new Minicomponente (estaPrendido, volumen, color, peso, parlantesIntegrados, cantidadParlante, radio);
     console.log(minicomponenteJVC);
