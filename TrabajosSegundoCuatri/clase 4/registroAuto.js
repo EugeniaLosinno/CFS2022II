@@ -161,7 +161,7 @@ for (var i = 0; i < baseAutos.getArregloAutos().length; i++) {
     crearAuto(baseAutos.getArregloAutos()[i], arregloAuto);
 }
 console.log(arregloAuto);
-var primerAuto = new Auto("Cabreton Maria Eugenia", "AA123KL", "Audi", "F6", "Gas- oil", 4, 2, false, 0);
+var primerAuto = new Auto("Cabreton Maria Eugenia", "AA123KL", "Audi", "F6", "Gas- oil", 4, 2, false, 0, 2022);
 agregarAuto(arregloAuto, primerAuto);
 console.log(arregloAuto);
 borrarrAuto(arregloAuto, 2);
