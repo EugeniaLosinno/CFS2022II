@@ -1,0 +1,1 @@
+Losinno Maria Eugenia,AB123KL,Ford,Mondeo,Nafta,4,5,false,0,2004;Oillataguerre Maria Eugenia,AB123KL,Toyota,Corola,Nafta,4,5,false,0,2005;Oillataguerre Martin,CB123KL,Toyota,Corola,Nafta,4,5,false,0,2008
