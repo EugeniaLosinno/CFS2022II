@@ -18,13 +18,13 @@ class Minicomponente {
     }
      
     let readlineSync = require('readline-sync');
-    let estaPrendido = readlineSync.question("Se encuentra prendido el Minicomponente S/N: ");
-    let volumen = readlineSync.question("En que volumen esta, indique entre 0 y 120: ");
+    let estaPrendido = readlineSync.question("Se encuentra prendido el Minicomponente S/N: ").toUpperCase();
+    let volumen = readlineSync.questionInt("En que volumen esta, indique entre 0 y 120: ");
     let color = readlineSync.question("Que color es: ");
-    let peso = readlineSync.question("Que peso tiene: ");
-    let parlantesIntegrados = readlineSync.question("Tiene parlantes integrados el Minicomponente S/N: ");
-    let cantidadParlante = readlineSync.question("Indique la cantidad de parlantes: ");
-    let radio = readlineSync.question("Radio AM o FM ");
-
+    let peso = readlineSync.questionInt("Que peso tiene: ");
+    let parlantesIntegrados = readlineSync.question("Tiene parlantes integrados el Minicomponente S/N: ").toUpperCase();
+    let cantidadParlante = readlineSync.questionInt("Indique la cantidad de parlantes: ");
+    let radio = readlineSync.question("Radio AM o FM ").toUpperCase();
+    
     let minicomponenteJVC = new Minicomponente (estaPrendido, volumen, color, peso, parlantesIntegrados, cantidadParlante, radio);
     console.log(minicomponenteJVC);
