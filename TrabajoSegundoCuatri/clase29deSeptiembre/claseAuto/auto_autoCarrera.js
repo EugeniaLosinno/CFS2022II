@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var Auto_1 = require("./Auto");
+var AutoCarrera_1 = require("./AutoCarrera");
+var auto1 = new Auto_1["default"]("Ford", "Mondeo", 0, "108HP", 7, 1, "Nafta", true);
+console.log(auto1);
+auto1.acelerar();
+console.log(auto1);
+var autoCarrera1 = new AutoCarrera_1["default"]("Mercedes", "F105", 0, "258HP", 10, 1, "Nafta", true, "Full", "CMW10");
+console.log(autoCarrera1);
+autoCarrera1.acelerar();
+console.log(autoCarrera1);

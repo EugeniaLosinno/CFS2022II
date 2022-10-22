@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var AnimalDeTierra_1 = require("./AnimalDeTierra");
+var Reptil_1 = require("./Reptil");
+var animalTerrestre = new AnimalDeTierra_1["default"]("Mamifero", "Oso Pardo", "Viviparo", "Omnívoro", "Pelo", "Manada", 2, 56);
+console.log(animalTerrestre);
+animalTerrestre.desplazar();
+var serpiente = new Reptil_1["default"]("Mamifero", "Boa", "Ovovivíparos", "Carnivoro", "Escamas", "Solitaria", 0, 13);
+console.log(serpiente);
+serpiente.desplazar();
